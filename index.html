@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body style="background-image: url('fundo.jpeg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="form-login">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                <div id="erro-email" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+                <div id="erro-senha" class="erro"></div>
+            </div>
+            <button type="button" class="botao" onclick="validarFormulario()">Entrar</button>
+            <div id="mensagem-resposta"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
